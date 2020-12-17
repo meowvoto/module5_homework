@@ -1,8 +1,8 @@
-let simpleObject = new Map([
+let myMap = new Map([
     [1, 'ichi'],
     [2, 'ni'],
     [3, 'san'],
-    [4, 'shi'],
+    [4, 'yon'],
     [5, 'go'],
     [6, 'roku'],
     [7, 'nana'],
@@ -11,12 +11,12 @@ let simpleObject = new Map([
     [10, 'juu']
 ]);
 
-let keys = simpleObject.keys();
-
-keys = keys.map (item, index, array) {
-    item = item + "";
-    item = `Ключ — ${item}`
-
+for (let result of myMap) {
+  console.log(`Ключ - ${result[0]}, значение - ${result[1]}`);
 };
 
-let values = simpleObject.values();
+// let keys = myMap.keys();
+// let values = myMap.values();
+// for (let i = 0; i < myMap.size; i++) {
+//   console.log(`Ключ - ${keys[i]}, значение - ${values[i]}`);
+// }; // возвращает "Ключ - undefined, значение - undefined". keys и values не массивы?
